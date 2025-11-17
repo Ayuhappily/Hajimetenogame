@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>契約法学習ゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>契約法学習ゲーム</h1>
+            <div class="character-info">
+                <div class="character-avatar">
+                    <img src="Images/IkemenImage.png" alt="春野 瑛士" class="character-image">
+                </div>
+                <div class="character-details">
+                    <h2 id="character-name">春野 瑛士</h2>
+                    <p id="character-role">弁護士</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-content">
+            <div class="heart-gauge">
+                <div class="gauge-container">
+                    <div class="gauge-fill" id="gauge-fill"></div>
+                </div>
+                <div class="gauge-text" id="gauge-text">❤ 50/100</div>
+            </div>
+
+            <div class="phase-info" id="phase-info">
+                <h3 id="phase-title">Phase 1: 価値観に基づく判断</h3>
+            </div>
+
+            <div class="contract-example-box">
+                <div class="contract-example" id="contract-example">
+                    【契約例】オンラインショップの利用規約
+「本サービスを利用する際は、当社が定める全ての条件に同意したものとみなします。利用者は規約の変更について事前通知なく適用されることに同意します。」
+                </div>
+            </div>
+
+            <div class="dialogue-box">
+                <div class="character-message" id="character-message">
+                    やあ、君と一緒に契約を読み解く時間が本当に楽しみだったよ💖 リラックスして、最初の問題を見てみようか？
+                </div>
+            </div>
+
+            <div class="input-section">
+                <div class="choice-buttons" id="choice-buttons" style="display: none;">
+                    <!-- 選択ボタンがここに動的に追加されます -->
+                </div>
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="あなたの回答を入力してください..." maxlength="200">
+                    <button id="submit-btn">回答する</button>
+                </div>
+                <div class="hint-text" id="hint-text">
+                    ヒント: キーワードを含む回答をするとハートゲージが上がります
+                </div>
+            </div>
+
+            <div class="result-message" id="result-message"></div>
+        </div>
+
+        <div class="game-footer">
+            <button id="restart-btn" class="restart-btn">ゲームをリスタート</button>
+        </div>
+    </div>
+
+    <script src="game-web.js"></script>
+</body>
+</html> 

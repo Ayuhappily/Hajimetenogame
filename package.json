@@ -1,0 +1,16 @@
+{
+  "name": "contract-law-game",
+  "version": "1.0.0",
+  "description": "契約法を学ぶ対話型ゲーム",
+  "main": "game.js",
+  "scripts": {
+    "start": "node game.js",
+    "dev": "node game.js"
+  },
+  "keywords": ["game", "law", "contract", "education"],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+} 

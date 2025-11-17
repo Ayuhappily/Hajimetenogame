@@ -1,0 +1,2 @@
+# Hajimetenogame
+はじめてつくったクソゲーだょ
